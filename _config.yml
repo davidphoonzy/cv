@@ -5,7 +5,7 @@ description         : >-
                       use tabs over spaces
                       and never broke production."
 baseurl             : ""
-repository          : davidphoonzy/cv.github.io
+repository          : davidphoonzy/cv
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
