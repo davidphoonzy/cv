@@ -1,9 +1,7 @@
 ### Site Settings ###
 title               : David Phoon's CV
 description         : >-
-                      "I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production."
+                      "I am a penguin :penguin:."
 baseurl             : "/cv"
 repository          : davidphoonzy/cv
 remote_theme        : YoussefRaafatNasry/portfolYOU
