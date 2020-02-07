@@ -8,6 +8,7 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
+
       {%- assign html_pages = site.html_pages | sort: 'weight' -%}
       {%- assign filtered_pages = "" | split: "" -%}
 
@@ -33,7 +34,7 @@
         {%- unless exclude -%}
           {%- assign filtered_pages = filtered_pages | push: html_page -%}
         {%- endunless -%}
-·
+
       {%- endfor -%}
 
       {% for html_page in filtered_pages %}
