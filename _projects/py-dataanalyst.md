@@ -7,7 +7,6 @@ layout: post2
 image: ../assets/img/certs/pydataanalyst.jpg
 description: A Data Analyst uses data visualization and manipulation techniques to uncover insights and help organizations make better decisions.
 ---
-A
 
 {% capture list_items %}
 Course Load: 60 hours, https://www.datacamp.com/tracks/data-analyst-with-python
@@ -24,6 +23,10 @@ Credential ID: 46c746160753e90ac58b6424f50ea6f910935195, https://www.linkedin.co
 ![cert]({{page.image}})
 
 <p class="text-center">
+{% include elements/button.html style="outline-info" link="https://www.datacamp.com/tracks/data-analyst-with-python" text="View Course on Datacamp" %}
+</p>
+
+<p class="text-center">
 {% include elements/button.html style ="outline-primary" link="https://www.datacamp.com/statement-of-accomplishment/track/0080e6b6eb50c8af2eba5d88756c837aab94c123" text="Full Cert on Datacamp" %}
 </p>
 
@@ -33,4 +36,4 @@ Credential ID: 46c746160753e90ac58b6424f50ea6f910935195, https://www.linkedin.co
 
 ---
 
-[^1]: Taken from [https://www.datacamp.com/tracks/data-analyst-with-python](https://www.datacamp.com/tracks/data-analyst-with-python).  Certification hours and requisites correct as of 06-Feb-2020.
+[^1]: Taken from <https://www.datacamp.com/tracks/data-analyst-with-python>.  Certification hours and requisites correct as of 06-Feb-2020.
