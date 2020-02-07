@@ -13,9 +13,16 @@
       <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
       <p id="{{ project_id }}-tools" class="card-text">
         {%- for tool in project_tools -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+        <span class="badge badge-pill text-success border border-success ml-1">{{ tool }}</span>
         {%- endfor -%}
       </p>
+      </div>
+    <div class="card-footer {{ text_style }}">
+      <span class="badge badge-primary">{{project.institute}}</span>
+      <span style="float:right">{{ project_date }}</span>
     </div>
+
+
+
   </a>
 </div>
