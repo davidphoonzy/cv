@@ -5,7 +5,7 @@ date: 2019-01-01
 tools: [Python, SQL, Statistics]
 layout: post2
 image: ../assets/img/certs/pydataanalyst.jpg
-description: A Data Analyst uses data visualization and manipulation techniques to uncover insights and help organizations make better decisions.
+description: Data visualization and manipulation techniques to uncover insights and help organizations make better decisions.
 ---
 
 {% capture list_items %}
@@ -17,7 +17,7 @@ Credential ID: 46c746160753e90ac58b6424f50ea6f910935195, https://www.linkedin.co
 
 <!-- Long Desc -->
 #### Course Description:
-> Data Analyst uses data visualization and manipulation techniques to uncover insights and help organizations make better decisions.[^1]
+> A Data Analyst uses data visualization and manipulation techniques to uncover insights and help organizations make better decisions.[^1]
 <!-- End Desc -->
 
 ![cert]({{page.image}})

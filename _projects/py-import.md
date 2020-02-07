@@ -23,7 +23,7 @@ Credential ID: 0080e6b6eb50c8af2eba5d88756c837aab94c123, https://www.linkedin.co
 ![cert]({{page.image}})
 
 <p class="text-center">
-{% include elements/button.html style="outline-info" link=https://www.datacamp.com/tracks/importing-cleaning-data-with-python" text="View Course on Datacamp" %}
+{% include elements/button.html style="outline-info" link="importing-cleaning-data-with-python" text="View Course on Datacamp" %}
 </p>
 
 <p class="text-center">

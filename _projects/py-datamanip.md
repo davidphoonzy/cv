@@ -5,7 +5,7 @@ date: 2019-01-01
 tools: [Python, SQL]
 layout: post2
 image: ../assets/img/certs/pydatamanip.jpg
-description: Extracting, filtering, and transforming data quickly and efficiently
+description: Extract, filter, and transform data quickly and efficiently
 ---
 
 {% capture list_items %}

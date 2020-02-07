@@ -28,12 +28,12 @@ author:
 # behance           : your_username
 # dribbble          : your_username
   email             : davidphoonzy@gmail.com
-#  facebook          : your_username
+# facebook          : your_username
   github            : davidphoonzy
 # gitlab            : your_username
 # instagram         : your_username
   linkedin          : dpzy
-#  medium            : your_username
+# medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
@@ -61,7 +61,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "page"
+      layout: "page2"
 
 
 ### Exclude from processing ###
