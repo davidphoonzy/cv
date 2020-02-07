@@ -1,7 +1,15 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
+- name: Final Cut Pro
+  percentage: 60
+  color: warning
 
-- name: Adobe Illustrator
+- name: Adobe Phoptoshop
+  percentage: 70
+  color: primary
+
+- name: Adobe After Effects
+  percentage: 50
+  color: danger
+
+- name: Ableton Live
   percentage: 90
   color: success
