@@ -76,3 +76,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - _posts/"eg*.md"
