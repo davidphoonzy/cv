@@ -12,6 +12,7 @@ Gemfile.lock
 
 # Log Files
 *.log
+.DS_store
 
 # Example Projects
 _projects/eg*.md
