@@ -1,36 +1,5 @@
 <!-- Remote certs JS -->
-<script src="{{ '/assets/js/remote-projects.js' | relative_url }}"></script>
-
 <div class="card-columns m-3 mt-5">
-
-  <!-- Remote certs
-  {% for remote_cert in page.remote_certs %}
-
-    {%- for repo in site.github.public_repositories -%}
-      {%- if remote_cert == repo.name -%}
-        {%- assign cert = repo -%}
-      {%- endif -%}
-    {%- endfor -%}
-
-    {%- assign words = cert.name | split: '-' -%}
-    {%- capture titlecase -%}
-      {%- for word in words -%}
-        {{ word | capitalize | append: ' ' }}
-      {%- endfor -%}
-    {%- endcapture -%}
-
-    {%- assign cert_type = "remote" -%}
-    {%- assign cert_id   = cert.name -%}
-    {%- assign cert_img  = false -%}
-    {%- assign cert_name = titlecase | strip -%}
-    {%- assign cert_desc = cert.description -%}
-    {%- assign cert_url  = cert.html_url -%}
-
-    {% include certs/cert-card.html %}
-
-    <script>get_tools("{{ site.github.owner_name }}/{{ remote_cert }}")</script>
-
-  {% endfor %} -->
 
   <!-- Local certs -->
   {% for cert in site.certs %}

@@ -20,7 +20,6 @@ nav_exclude:                                            # The following paths ar
   - pages/about.md
   - pages/blog.html
 
-
 ### Author Info ###
 author:
   name              : David Phoon
@@ -53,15 +52,22 @@ collections:
   certs:
     output: true
     permalink: /certs/:name
+  projects:
+    output: true
+    permalink: /projects/:name
 
-
-### Defaults for collections ###
+### Defaults for collections - certs and project ###
 defaults:
   - scope:
-      path: ""
+      path: "certs"
       type: "certs"
     values:
       layout: "certlay"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "projectlay"
 
 
 ### Exclude from processing ###
