@@ -3,6 +3,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+_posts
 
 # Ruby Gems
 .bundle
@@ -10,3 +11,6 @@ Gemfile.lock
 
 # Log Files
 *.log
+
+# Example Projects
+_projects/eg*.md

@@ -9,3 +9,7 @@
 - name: R
   percentage: 50
   color: danger
+
+- name: Excel VBA
+  percentage: 50
+  color: danger
