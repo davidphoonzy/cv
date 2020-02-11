@@ -3,7 +3,7 @@ name: Data Manipulation With Python
 institute: Datacamp
 date: 2019-01-01
 tools: [Python, SQL]
-layout: post2
+layout: certlay
 image: ../assets/img/certs/pydatamanip.jpg
 description: Extract, filter, and transform data quickly and efficiently
 ---

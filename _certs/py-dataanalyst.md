@@ -3,7 +3,7 @@ name: Data Analyst With Python
 institute: Datacamp
 date: 2019-01-01
 tools: [Python, SQL, Statistics]
-layout: post2
+layout: certlay
 image: ../assets/img/certs/pydataanalyst.jpg
 description: Data visualization and manipulation techniques to uncover insights and help organizations make better decisions.
 ---

@@ -50,18 +50,18 @@ permalink: /blog/:title
 
 ### Collections ###
 collections:
-  projects:
+  certs:
     output: true
-    permalink: /projects/:name
+    permalink: /certs/:name
 
 
 ### Defaults for collections ###
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: "certs"
     values:
-      layout: "page2"
+      layout: "certlay"
 
 
 ### Exclude from processing ###

@@ -3,7 +3,7 @@ name: Importing & Cleaning Data with Python
 institute: Datacamp
 date: 2019-01-01
 tools: [Python, Excel, SQL]
-layout: post2
+layout: certlay
 image: ../assets/img/certs/pyimport.jpg
 description: Import data from various sources, such as Excel, SQL, SAS, and right from the web. Prepare and clean your data so it is ready to by analyzed.
 ---
