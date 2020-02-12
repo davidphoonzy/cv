@@ -1,0 +1,42 @@
+<!-- Accordion Snippet -->
+{%- assign items = list_items | strip | newline_to_br | split: '<br />' -%}
+<style>
+  .card-header:hover {background-color:#f0f0f0;}
+  i.fa {
+  transition: .1s transform ease-in-out;
+  }
+  .collapsed i.fa {
+  transform: rotate(90deg);
+  }
+</style>
+
+<div class="accordion" id="acc">
+  {% for item in items %}
+    {%- assign item_object = item | split: ',' -%}
+    <div class="card">
+      <div class="card-header" id="head{{ item_object[0] }}" role="button" data-toggle="collapse" data-target="#collapse{{ item_object[0] | slugify }}" aria-expanded="true" aria-controls="collapse{{ item_object[0] | slugify }}">
+          <h6 class="mb-0">
+          {{ item_object[0] }}
+          <i class="fa fa-chevron-down pull-right" style="float:right"></i>
+          </h6>
+      </div>
+
+
+      {% if item_object[3] == 'colla' %}
+      <div role="button" id="collapse{{ item_object[0] | slugify }}" class="collapse" aria-labelledby="head{{ item_object[0] | slugify }}">
+        <div class="card-body">
+          <a href="{{item_object[2]}}">{{ item_object[1] }}</a>
+        </div>
+      </div>
+      {% else %}
+      <div role="button" id="collapse{{ item_object[0] | slugify }}" class="collapse show" aria-labelledby="head{{ item_object[0] | slugify }}">
+        <div class="card-body">
+          <a href="{{item_object[2]}}">{{ item_object[1] }}</a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+<br />
+<!-- End of Accordion Snippet -->

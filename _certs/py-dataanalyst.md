@@ -9,16 +9,17 @@ description: Data visualization and manipulation techniques to uncover insights 
 ---
 
 {% capture list_items %}
-Course Load: 60 hours, https://www.datacamp.com/tracks/data-analyst-with-python
-Type: Career Track (16 Courses), https://www.datacamp.com/tracks/data-analyst-with-python
-Credential ID: 46c746160753e90ac58b6424f50ea6f910935195, https://www.linkedin.com/in/dpzy/
+Course Load, 60 hours, https://www.datacamp.com/tracks/data-analyst-with-python
+Course Type, Career Track (16 Modules), https://www.datacamp.com/tracks/data-analyst-with-python
+Credential ID, 46c746160753e90ac58b6424f50ea6f910935195, https://www.linkedin.com/in/dpzy/, colla,
 {% endcapture %}
-{% include elements/list.html title="Credentials" %}
-
+{% include elements/accordion.html %}
 <!-- Long Desc -->
 #### Course Description:
-> A Data Analyst uses data visualization and manipulation techniques to uncover insights and help organizations make better decisions.[^1]
+> A Data Analyst uses data visualization and manipulation techniques to uncover insights, and help organizations make better decisions. [^1]
 <!-- End Desc -->
+<br />
+<br />
 
 ![cert]({{page.image}})
 

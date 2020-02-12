@@ -1,12 +1,12 @@
 - name: Final Cut Pro
-  percentage: 60
-  color: warning
-
-- name: Adobe Phoptoshop
   percentage: 70
   color: primary
 
-- name: Adobe After Effects
+- name: Phoptoshop
+  percentage: 60
+  color: warning
+
+- name: After Effects
   percentage: 50
   color: danger
 

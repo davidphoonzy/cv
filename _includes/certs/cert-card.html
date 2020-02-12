@@ -1,5 +1,5 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ cert_url }}" class="project card text-dark">
+  <a href="{{ cert_url }}" class="project card text-dark ">
     {%- if cert_img -%}
     <img id="{{ cert_id }}-img" class="card-img-top" src="{{ cert_img }}" alt="{{ cert_name }}" />
     {%- endif -%}
@@ -17,7 +17,7 @@
         {%- endfor -%}
       </p>
       </div>
-    <div class="card-footer {{ text_style }}">
+    <div class="card-footer {{ text_style }} ">
       <span class="badge badge-warning">{{cert.institute}}</span>
       <span style="float:right">{{ cert_date }}</span>
     </div>

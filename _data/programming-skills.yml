@@ -3,8 +3,8 @@
   color: warning
 
 - name: Python
-  percentage: 70
-  color:
+  percentage: 60
+  color: warning
 
 - name: R
   percentage: 50

@@ -9,11 +9,11 @@ description: Extract, filter, and transform data quickly and efficiently
 ---
 
 {% capture list_items %}
-Course Load: 20 hours, https://www.datacamp.com/tracks/data-manipulation-with-python
-Type: Skill Track (4 Courses), https://www.datacamp.com/tracks/data-manipulation-with-python
-Credential ID: 5448bd25be7b8dc8ebce399766f00e0d4ba08fa2, https://www.linkedin.com/in/dpzy/
+Course Load, 20 hours, https://www.datacamp.com/tracks/data-manipulation-with-python
+Course Type, Skill Track (4 Modules), https://www.datacamp.com/tracks/data-manipulation-with-python
+Credential ID, 5448bd25be7b8dc8ebce399766f00e0d4ba08fa2, https://www.linkedin.com/in/dpzy/, colla
 {% endcapture %}
-{% include elements/list.html title="Credentials" %}
+{% include elements/accordion.html %}
 
 <!-- Long Desc -->
 #### Course Description:

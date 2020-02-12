@@ -9,12 +9,11 @@ description: Import data from various sources, such as Excel, SQL, SAS, and righ
 ---
 
 {% capture list_items %}
-Course Load: 13 hours, https://www.datacamp.com/tracks/importing-cleaning-data-with-python?version=1
-Type: Skill Track (4 Courses), https://www.datacamp.com/tracks/importing-cleaning-data-with-python?version=1
-Credential ID: 0080e6b6eb50c8af2eba5d88756c837aab94c123, https://www.linkedin.com/in/dpzy/
+Course Load, 13 hours, https://www.datacamp.com/tracks/importing-cleaning-data-with-python?version=1
+Course Type, Skill Track (4 Courses), https://www.datacamp.com/tracks/importing-cleaning-data-with-python?version=1
+Credential ID, 0080e6b6eb50c8af2eba5d88756c837aab94c123, https://www.linkedin.com/in/dpzy/
 {% endcapture %}
-{% include elements/list.html title="Credentials" %}
-
+{% include elements/accordion.html %}
 <!-- Long Desc -->
 #### Course Description:
 > Learn to import data from various sources, such as Excel, SQL, SAS, and right from the web. From there, learn to efficiently prepare and clean your data so it is ready to by analyzed.[^1]

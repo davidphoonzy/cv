@@ -1,11 +1,27 @@
 <div class="col-lg">
   <h2 class="mb-3">{{ include.title }}</h2>
     {% for skill in include.source %}
+      {% if skill.percentage == 50 %}
+        {% assign tag = 'Familiar' %}
+      {% endif %}
+      {% if skill.percentage == 60 %}
+        {% assign tag = 'Competent' %}
+      {% endif %}
+      {% if skill.percentage == 70 %}
+        {% assign tag = 'Proficient' %}
+      {% endif %}
+      {% if skill.percentage == 80 %}
+        {% assign tag = 'Fluent' %}
+      {% endif %}
+      {% if skill.percentage == 90 %}
+        {% assign tag = 'Expert' %}
+      {% endif %}
       <div class="skill">
         <p>{{ skill.name }}</p>
         <div class="skill-bar skill-bar-{{ skill.color }} skill-{{ skill.percentage }} wow animated slideInLeft" data-wow-delay="{{ forloop.index | divided_by: 20.0 }}">
-          <span>{{ skill.percentage }}%</span>
+          <span>{{ tag }}</span>
         </div>
       </div>
+
     {% endfor %}
 </div>
