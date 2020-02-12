@@ -8,7 +8,7 @@ weight: 4
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-How 
+How
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

@@ -1,15 +1,15 @@
 - name: Final Cut Pro
-  percentage: 70
+  percentage: 75
   color: primary
 
 - name: Phoptoshop
-  percentage: 60
+  percentage: 65
   color: warning
 
 - name: After Effects
-  percentage: 50
+  percentage: 55
   color: danger
 
 - name: Ableton Live
-  percentage: 90
+  percentage: 95
   color: success

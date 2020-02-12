@@ -1,15 +1,15 @@
 - name: HTML5/CSS3
-  percentage: 60
+  percentage: 65
   color: warning
 
 - name: Python
-  percentage: 60
+  percentage: 65
   color: warning
 
 - name: R
-  percentage: 50
+  percentage: 55
   color: danger
 
 - name: Excel VBA
-  percentage: 50
+  percentage: 55
   color: danger

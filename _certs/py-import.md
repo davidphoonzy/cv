@@ -17,6 +17,7 @@ Credential ID, 0080e6b6eb50c8af2eba5d88756c837aab94c123, https://www.linkedin.co
 <!-- Long Desc -->
 #### Course Description:
 > Learn to import data from various sources, such as Excel, SQL, SAS, and right from the web. From there, learn to efficiently prepare and clean your data so it is ready to by analyzed.[^1]
+
 <!-- End Desc -->
 
 ![cert]({{page.image}})

@@ -17,9 +17,8 @@ Credential ID, 46c746160753e90ac58b6424f50ea6f910935195, https://www.linkedin.co
 <!-- Long Desc -->
 #### Course Description:
 > A Data Analyst uses data visualization and manipulation techniques to uncover insights, and help organizations make better decisions. [^1]
+
 <!-- End Desc -->
-<br />
-<br />
 
 ![cert]({{page.image}})
 
