@@ -17,3 +17,6 @@ Gemfile.lock
 # Example Projects
 _projects/eg*.md
 _posts
+
+#timeline
+_data/timeline.yml
