@@ -1,7 +1,6 @@
 ### Site Settings ###
 title               : David Phoon's CV
-description         : >-
-                      "I am a penguin :penguin:."
+description         : "Here lies the trail of my coding exploits"
 baseurl             : "/cv"
 repository          : davidphoonzy/cv
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -22,7 +21,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : David Phoon
-  image             : https://www.nationalgeographic.com/content/dam/news/photos/000/676/67655.adapt.676.1.jpg
+  image             : assets/IMG_9005.jpg
 # behance           : your_username
 # dribbble          : your_username
   email             : davidphoonzy@gmail.com
