@@ -22,7 +22,7 @@
       </div>
 
 
-      {% if item_object[3] == 123 %}
+      {% if item_object[3] == " 123" %}
       <div role="button" id="collapse{{ item_object[0] | slugify }}" class="collapse" aria-labelledby="head{{ item_object[0] | slugify }}">
         <div class="card-body">
           <a href="{{item_object[2]}}">{{ item_object[1] }}</a>
