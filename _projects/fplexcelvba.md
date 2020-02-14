@@ -21,5 +21,5 @@ description: Excel VBA Macro-enabled spreadsheet with GUI, basic memory function
 
 
 <p class="text-center">
-{% include elements/button.html link="../assets/projects/fplteam-cv.xlsb" text="Download" %}
+{% include elements/button.html text="Download" link="../assets/projects/fplteam-cv.xlsb" %}
 </p>

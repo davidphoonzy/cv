@@ -8,7 +8,9 @@ weight: 4
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Unpacking how systems, structures and institutional designs overlay/intersect/interrupt-...reconstitute/mangle/distort/promulgate/feedback loop/contort/dislocate/decontextualize/feedback loop in all its messiness -- is the object of my fascination; And the subject of my creative process.
+Learning about different systems of thought, methodologies, and structures is my hobby.
+
+Understanding and testing how they interact, build upon, and interplay in novel or unintended fashion is my passion.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

@@ -11,7 +11,7 @@ description: Import data from various sources, such as Excel, SQL, SAS, and righ
 {% capture list_items %}
 Course Load, 13 hours, https://www.datacamp.com/tracks/importing-cleaning-data-with-python?version=1
 Course Type, Skill Track (4 Courses), https://www.datacamp.com/tracks/importing-cleaning-data-with-python?version=1
-Credential ID, 0080e6b6eb50c8af2eba5d88756c837aab94c123, https://www.linkedin.com/in/dpzy/
+Credential ID, 0080e6b6eb50c8af2eba5d88756c837aab94c123, https://www.linkedin.com/in/dpzy/, 123
 {% endcapture %}
 {% include elements/accordion.html %}
 <!-- Long Desc -->
