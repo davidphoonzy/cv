@@ -12,6 +12,8 @@ Learning about different systems of thought, methodologies, and structures is my
 
 Understanding and testing how they interact, build upon, and interplay in novel or unintended fashion is my passion.
 
+My interests are in PPE (Politics, Philosophy and Economics), which I read up on during my spare time.
+
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
