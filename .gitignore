@@ -3,8 +3,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-_posts
-pages/blog.html
 
 # Ruby Gems
 .bundle
