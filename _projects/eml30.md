@@ -3,7 +3,7 @@ name: EML30 Press Releases and Coverage
 tools:
 datedone: 2015-12-01
 image: ../assets/img/projects/eml30splash.jpg
-description: Copywriting, production manager and press secretary work for EML's first for-profit music festival,
+description: Copywriting and operations work for EML's first for-profit music festival, and subsequent media coverage.
 
 ---
 <object data="../assets/projects/eml30pr.pdf" width="800" height="400">
