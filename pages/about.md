@@ -14,7 +14,7 @@ Understanding and testing how they interact, build upon, and interplay in novel 
 
 My interests are in Politics, Philosophy and Economics, which I read up and pursue during my spare time, as a patron of various think-tanks.
 
-How much social solidarity I've built, and public learning I've deepened, is how I'll envision success.
+How much social solidarity I've built, and public learning I've deepened, is probably how I envision success.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
