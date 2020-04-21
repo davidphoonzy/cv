@@ -10,9 +10,11 @@ weight: 4
 Hi I am **{{ site.author.name }}** :wave:,<br>
 Learning about different systems of thought, methodologies, and structures is my hobby.
 
-Understanding and testing how they interact, build upon, and interplay in novel or unintended fashion is my passion.
+Understanding and testing how they interact, build upon, and interplay in novel or unintended fashion is the source of my fascination.
 
-My interests are in PPE (Politics, Philosophy and Economics), which I read up on during my spare time.
+My interests are in Politics, Philosophy and Economics, which I read up and pursue during my spare time, as a patron of various think-tanks.
+
+How much social solidarity I've built, and public learning I've deepened, is how I'll envision success.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
