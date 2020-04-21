@@ -1,6 +1,6 @@
 ---
 title: The Art of the Anti-Advertisement - From Acknowledgement to the Absurd
-tags: [External Post, Academia]
+tags: [External Post, Academia, Critical Theory]
 style: fill
 color: info
 description: Tracing the development and aesthetics of the 'Self-critical' mode of Advertisement.
