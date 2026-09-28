@@ -204,7 +204,7 @@ Left Side Bar
 }
 
 .profilepic {
-    background-image: url("/assets/frontpic.jpg");
+    background-image: url("./assets/frontpic.jpg");
     background-size: cover;
     background-position: center center;
     width: 150px;
@@ -507,7 +507,7 @@ PROJECTS
 div#projects-card-1 > .projects-card-front, 
 div#projects-card-1 > .projects-card-back{
     background-color:#3881ae;
-    background-image: url("/assets/img/projects/eml30splash.jpg");
+    background-image: url("./assets/img/projects/eml30splash.jpg");
     background-size: cover;
     background-position: bottom;
     background-blend-mode:multiply;
@@ -518,7 +518,7 @@ div#projects-card-1 > .projects-card-back{
 div#projects-card-2 > .projects-card-front, 
 div#projects-card-2 > .projects-card-back{
     background-color: #226F54;
-    background-image: url("/assets/img/projects/excelgrass.jpg");
+    background-image: url("./assets/img/projects/excelgrass.jpg");
     background-size: cover;
     background-position: bottom;
     background-blend-mode: luminosity;
