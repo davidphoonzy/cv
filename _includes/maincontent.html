@@ -1,0 +1,19 @@
+<section class="content">
+    <div class="main-section">
+        {% assign sections = site.sections | sort: "order" %}
+        {% for section in sections %}
+            <div class="wrapper" id="{{ section.slug }}">
+                <section id="{{ section.slug }}" class="header-section" data-title="{{ section.title }}">
+                    <h1>{{ section.title r}}</h1>
+                </section>        
+                
+                <section class ="content-section">
+                    {{ section.content }}
+                </section>
+                
+                <div class ="divider-section"> </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+

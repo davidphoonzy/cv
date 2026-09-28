@@ -1,0 +1,19 @@
+<aside class="sidebar">
+    <div class="sidebar-inner">
+        <div class="identity-wrapper">
+            <div class="profilepic"></div>
+            <div class="myname">David Phoon</div>
+            <div class="motto"></div>
+        </div>
+
+        <nav class="directory">
+            {% assign sections = site.sections | sort: "order" %}
+            {% for section in sections %}
+                <a href="#{{ section.slug }}" class="nav-header">
+                    {{ section.title }} 
+                </a>
+                <p></p>
+            {% endfor %}
+        </nav>
+    </div>
+</aside>

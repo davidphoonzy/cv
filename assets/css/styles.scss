@@ -1,5 +1,685 @@
- ---
- ---
- /* Add your custom style here */
- @import "portfolYOU";
- .uhoh { position: absolute; border-top: 5px solid inherit; top: -30px; padding: 0; font-size: 10px; padding: 3px 0; font-weight: 500; right: 0; };
+---
+---
+    // Blues: 3681AD, 2274A5, 5E9ABD, 72a6c5, 
+    // Purp: A28497, 424874, 5B4E77, #C19AB7
+    // Olive-Grey: 757761, 7C7F65. #4E4B5C
+    // Green: 5C946E, 226F54, 35AC7E, 678D58, 2CA6A4
+    // Orange: FC974B, FC8D39
+    // White: E9EFD7
+    // Pink: C96480
+    // Black: 424242
+    // Red: 8C5E58
+
+html {
+    min-width: 300px;
+    scroll-behavior:smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 5rem;
+    scroll-padding-bottom: 8.5rem;
+}
+
+
+body { 
+    margin: 0;
+    min-width: 280px;
+    background-color: #F0FCE1; // E2FCEF E9EFD7
+    font-family: 'Nunito Sans', sans-serif; //Faculty Glyphic'
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #235C88;
+}
+
+.main-section {
+    scroll-behavior:auto;
+}
+
+.wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#writings.wrapper  {
+    background-color: #111; // F0C58C FFB963 3881ae
+    padding: 1rem;
+    border-radius: 2%;
+    color: #F0FCE1;
+}
+
+#writings h1 {
+    color: #FC8C36;
+}
+
+#aboutme.wrapper  {
+    border-radius: 3%;
+    // background-color:#C4D6B0; //823200 FFA639
+    padding: 1rem;
+}
+
+
+#certs.wrapper  {
+    border-radius: 2%;
+    padding: 1em;
+}
+
+
+.topbar, .bottombar {
+    height: 4rem;
+    position: fixed;
+    left:0;
+    right: 0;
+    background:#FC8022; //FC8C36 FC8D39
+    z-index: 100;
+}
+// #587B7F 556F44
+.topbar {
+    top:0
+}
+
+.bottombar {
+    bottom: 0;
+}
+.mobilebar {
+    display: none;
+}
+
+
+
+
+/* ============================
+Main Layout
+============================= */
+.layout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    width: 100%;
+    max-width: 1500px;
+    margin-inline: auto;
+    /* padding: 4rem clamp(1rem, 5vw, 5rem); */
+    column-gap: 4rem;
+    padding: 4rem 3rem 3rem 3rem;
+    box-sizing: border-box;
+    outline: 0px solid red;
+}
+
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: -2px;
+    font-size: 2rem;
+    text-align: center;
+    color: #FC8022; // #067BC2; //3F88C5
+
+}
+
+.myname {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    letter-spacing: -2px;
+    color: #2684BA; //2684BA 477998
+}
+
+.nav-header {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: +2px;
+    text-decoration: none;
+}
+
+/* ============================
+Top Bar
+============================= */
+
+/*
+.topbar-content {
+    max-width: 1500px;
+    margin-inline: auto;
+    box-sizing: border-box;
+    padding-left: calc(300px + 1rem);
+}
+*/
+
+.topbar-content {
+    max-width: 1500px;
+    margin-inline: auto;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+    display: flex;
+    box-sizing: border-box;
+    outline: 0px solid blue;
+
+}
+
+
+
+
+.topbar .active-header {
+    font-size: 1.9rem;
+    //letter-spacing: +1.5px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #E9EFD7; //#2274A5
+    opacity: 0.6;
+}
+
+
+/* ============================
+Left Side Bar 
+============================= */
+
+.sidebar {
+    position: sticky;
+    display: grid;
+    width: 300px;
+    top: 4rem;
+    height: calc(100dvh - 8rem);
+    align-content: center;
+    justify-items: center;
+    outline: 0px solid #2274A5;
+}
+
+
+.sidebar a {
+    color: #235C88 //#2684BA; 
+}
+
+.sidebar-inner {
+    width: max-content;
+    
+}
+
+.directory {
+    display: block;
+    text-decoration: none;
+    justify-self: left;
+}
+
+.profilepic {
+    background-image: url("/assets/frontpic.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-inline: auto;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    overflow: visible !important;
+    border: 0 double black;
+}
+
+.identity-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+/* ============================
+Right Content
+============================= */
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 0;
+    outline: 0px solid green;
+
+}
+
+.content a {
+    color: #2274A5;
+}
+
+.header-section {
+    width: 100%;
+    align-items: center;
+}
+
+.divider-section {
+    text-align: center;
+    padding-top: 1.5rem;
+    align-self: center;
+    color: #FC8D39;
+}
+
+/* ============================
+Mobile Layout
+============================= */
+@media (max-width: 750px) {
+    html {
+        font-size: 87.5%;
+    }
+    .layout {
+        display: block;
+        width: 100%;
+        padding: 4rem 2rem;
+        box-sizing: border-box;
+        outline: 0px solid red;
+
+        line-height: 1.6;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .sidebar-inner {
+        width: 100%;
+        max-width: max-content;
+        box-sizing: border-box;
+    }
+    .directory {
+        display: flex;
+        flex-direction: row;
+        max-width: 90vw;
+        white-space: nowrap;
+        scrollbar-width: none;
+        overflow-x: hidden;
+    }
+
+    .directory::-webkit-scrollbar {
+        display: none;
+    }
+
+    .directory .nav-header {
+        flex: 0 0 auto;
+        font-size: 1rem;
+
+    }
+
+    .profilepic {
+        display: none;
+    }
+
+}
+
+
+
+/* ============================
+WRITINGS
+============================= */
+
+@keyframes fadeInTop {
+    0% {
+        transform: translateY(10%);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+.writings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 320px), 1fr));
+    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5em;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.writings-card {
+    position: relative;
+    overflow: hidden;
+    // background-color:// A28497 // // 757761 // 424874 // FC974B // 3681AD // 5C946E 
+    // background-color:#E9EFD7;
+    border-radius: 2%; 
+    padding: 0.5rem;
+    animation: 0.6s fadeInTop;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+
+.writings-card:hover {
+    // padding: 0;
+    // border: 0.5rem solid #5e9abd;
+    border-radius: 3%; 
+}
+
+/* .writings-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+} */
+
+
+.writings-card a {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    padding-top: 200px;
+}
+
+
+
+/* --------
+Image----*/
+
+.writings-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 3%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: height 0.15s ease-in-out, mask-size 0.10s ease-in-out, -webkit-mask-size 0.10s ease-in-out;
+    z-index: 1;
+    opacity: 0.8;
+    object-fit: cover;
+
+
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-position: top;
+    mask-repeat: no-repeat;
+}
+
+.writings-card:hover .writings-card-image {
+    height: 70%;
+    mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 35%, transparent 100%);
+
+}
+
+/* --------
+Text ---- */
+
+.writings-card-title h3 {
+    margin: 1rem 0 1rem;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    line-height: 1.2;
+
+}
+
+.writings-card-des p {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 0.9rem;
+
+}
+
+.writings-card-page {
+    font-family: 'Cabin', sans-serif;
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+
+
+
+/* ============================
+PROJECTS
+============================= */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 265px));
+    gap: clamp(1em, 3vw, 3.5rem);
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+.projects-card {
+    position: relative;
+    background-color: transparent;
+    height: 352px;
+    perspective: 1000px;  
+    width: min(100%, 265px);
+    justify-self: center;
+}
+
+.projects-card,
+.projects-card-inner,
+.projects-card-front,
+.projects-card-back,
+.projects-card-img {
+    box-sizing: border-box;
+}
+
+
+.projects-card-inner {
+    border: solid 2px #424242;
+    border-radius: 3%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    overflow: visible;
+    
+}
+
+.projects-card:hover .projects-card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer
+
+}
+
+.projects-card-front, .projects-card-back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100% ;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    padding: 0 0.7rem;
+    box-shadow: 0 0 1rem 5px rgba(50, 50, 50, 0.2);
+    overflow: hidden;
+}
+
+div#projects-card-1 > .projects-card-front, 
+div#projects-card-1 > .projects-card-back{
+    background-color:#3881ae;
+    background-image: url("/assets/img/projects/eml30splash.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode:multiply;
+    position: absolute;
+    color:#E9EFD7;
+}
+
+div#projects-card-2 > .projects-card-front, 
+div#projects-card-2 > .projects-card-back{
+    background-color: #226F54;
+    background-image: url("/assets/img/projects/excelgrass.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: luminosity;
+    position: absolute;
+    color:#E9EFD7;
+}
+
+div#projects-card-2 > .projects-card-front, 
+div#projects-card-2 > .projects-card-back {
+    background-color: #226F54;
+}
+
+.projects-card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    gap: 0px;
+}
+
+.projects-card-front {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    gap: 0px;
+}
+
+.projects-card-img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 3%;
+    border: inset 3px #424242;
+}
+
+
+.projects-card-img img {
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+
+}
+
+.projects-card-head {
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 10%;
+    border: inset 3px #424242;
+    text-transform: uppercase;
+    font-style: italic;
+    align-self: center;
+
+}
+.projects-card-head,
+.projects-card-desc,
+.projects-card-img {
+    box-shadow: 0 0 0.4rem 0.4rem rgba(50,50, 90, 0.5);
+}
+
+div#projects-card-1 > .projects-card-front .projects-card-head,
+div#projects-card-1 > .projects-card-back .projects-card-head {
+    background-color: rgba($color: #3881ae, $alpha: 0.87);
+    backdrop-filter: blur(12px);
+}
+
+
+div#projects-card-1 > .projects-card-front .projects-card-desc {
+    background-color: rgba($color: #3881ae, $alpha: 0.87);
+    backdrop-filter: blur(12px);
+}
+
+div#projects-card-2 > .projects-card-front .projects-card-head,
+div#projects-card-2 > .projects-card-back .projects-card-head {
+    background-color: rgba($color: #5C946E, $alpha: 0.8);
+    backdrop-filter: blur(8px);
+}
+
+
+div#projects-card-2 > .projects-card-front .projects-card-desc {
+    background-color: rgba($color: #5C946E, $alpha: 0.8);
+    backdrop-filter: blur(8px);
+}
+
+
+.projects-card-desc {
+    font-size: 0.8rem;
+    height: auto;
+    border-radius: 5%;
+    border: inset 3px #424242;
+    flex: 1;
+}
+
+
+
+/* ============================
+PROJECTS
+============================= */
+
+.certs-container {
+    width: auto;
+}
+
+.certs-card {
+    display: grid;
+    grid-template-columns: 100px auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    gap: 1em;
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: background-color 0.1s ;
+}
+
+.certs-card a {
+    text-decoration: none;
+}
+
+.certs-card div {
+    background-color: transparent;
+}
+
+.certs-card:hover {
+    background-color:#FED9B7;
+    border-radius: 16px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 0 0 1rem 10px rgba(100, 100, 100, 0.15);
+
+}
+
+.certs-links img {
+    width: 0.8rem;
+}
+
+.certs-name {
+    font-weight: bold;
+}
+
+.certs-links a {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.certs-links a:hover {
+    background-color: #F0FCE1;
+
+}
+
+.certs-pill {
+    border-radius: 16px;
+    background-color: #226F54;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    color:#F0FCE1 ;
+}

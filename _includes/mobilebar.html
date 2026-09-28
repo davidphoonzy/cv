@@ -1,0 +1,20 @@
+<header class="mobilebar">
+    <div class="mobile-name">
+        David Phoon
+    </div>
+
+    <div class="mobile-picture">
+        <!-- fill here-->
+    </div>
+
+    <nav class="mobile-nav">
+        { % for section in site.sections % }
+            <a href="#{{ section. slug }}">
+                {{ section.title }}
+            </a>
+        { % endfor %}
+    </nav>
+
+
+
+</header>

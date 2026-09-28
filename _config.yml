@@ -1,45 +1,17 @@
 ### Site Settings ###
 title               : David Phoon's CV
-description         : "Welcome to my digital abode"
-baseurl             : "/cv"
+description         : "David's Portfolio"
+url             : "/cv"
 repository          : davidphoonzy/cv
-remote_theme        : YoussefRaafatNasry/portfolYOU
 
-
-### Plugins ###
-plugins:
-  - jemoji
-
-
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  # - pages/blog.html
+markdown: kramdown
 
 ### Author Info ###
 author:
   name              : David Phoon
   image             : assets/frontpic.jpg
-# behance           : your_username
-# dribbble          : your_username
   email             : davidphoonzy@gmail.com
-# facebook          : your_username
   github            : davidphoonzy
-# gitlab            : your_username
-# instagram         : your_username
-  linkedin          : dpzy
-# medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-# twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
-
 
 ### Posts ###
 permalink: /blog/:title
@@ -47,25 +19,24 @@ permalink: /blog/:title
 
 ### Collections ###
 collections:
-  certs:
+  sections:
     output: true
-    permalink: /certs/:name
-  projects:
+  section-certs:
+    output: false
+    permalink: /section-certs/:name
+  section-projects:
     output: true
-    permalink: /projects/:name
+    permalink: /section-projects/:name
+  section-writings:
+    output: true
+    permalink: /section-writings/:name
 
-### Defaults for collections - certs and project ###
 defaults:
   - scope:
-      path: "certs"
-      type: "certs"
-    values:
-      layout: "certlay"
-  - scope:
       path: ""
-      type: "projects"
+      type: ""
     values:
-      layout: "projectlay"
+      layout: ""
 
 
 ### Exclude from processing ###

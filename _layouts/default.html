@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+{% include head.html %}
+</head>
+
+
+<body>
+
+    {% include topbar.html %}
+
+    <div class="layout">
+        <!-- Left Sidebar -->
+        {% include sidebar.html %}
+
+        <!-- Right Content Area -->
+        {{ content }}
+    </div>
+
+
+    {% include mobilebar.html %}
+
+
+    <footer class ='bottombar'>
+        <!-- Fill Here-->
+    </footer>
+<!-- Scripting -->
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+</html>
