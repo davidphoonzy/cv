@@ -2,7 +2,7 @@
 name: EML30 Press Releases & Media
 tools:
 datedone: 2015-12-01
-image: /assets/img/projects/eml30splash.jpg
+image: https://davidphoonzy.github.io/cv/assets/img/projects/eml30splash.jpg
 description: Copywriting for EML's first for-profit music festival, and subsequent media coverage.
 order: 1
 ---

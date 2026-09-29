@@ -2,7 +2,7 @@
 name: Fantasy Football Excel VBA 
 tools: [Excel, VBA]
 datedone: 2018-01-01
-image: /assets/img/projects/excelplan.png
+image: https://davidphoonzy.github.io/cv/assets/img/projects/excelplan.png
 description: Excel VBA Macro-enabled spreadsheet with GUI, memory and error-handling.
 order: 2
 ---
