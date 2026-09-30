@@ -1,5 +1,5 @@
 ---
-name: EML30 Press Releases & Media
+name: EML30 Press Release Media
 tools:
 datedone: 2015-12-01
 image: https://davidphoonzy.github.io/cv/assets/img/projects/eml30splash.jpg
