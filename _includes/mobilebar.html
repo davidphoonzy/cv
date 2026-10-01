@@ -1,18 +1,14 @@
 <header class="mobilebar">
-    <div class="mobile-name">
-        David Phoon
+    <div class="mobilebar-name">
     </div>
 
-    <div class="mobile-picture">
-        <!-- fill here-->
-    </div>
-
-    <nav class="mobile-nav">
-        { % for section in site.sections % }
-            <a href="#{{ section. slug }}">
-                {{ section.title }}
+    <nav class="mobilebar-directory">
+        {% assign sections = site.sections | sort: "order" %}
+        {% for section in sections %}
+            <a href="#{{ section.slug }}" class="mobilebar-section">
+                {{ section.title }} 
             </a>
-        { % endfor %}
+        {% endfor %}
     </nav>
 
 

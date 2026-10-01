@@ -1,15 +1,15 @@
 <aside class="sidebar">
     <div class="sidebar-inner">
-        <div class="identity-wrapper">
+        <div class="sidebar-idwrapper">
             <div class="profilepic"></div>
             <div class="myname">David Phoon</div>
             <div class="motto"></div>
         </div>
 
-        <nav class="directory">
+        <nav class="sidebar-directory">
             {% assign sections = site.sections | sort: "order" %}
             {% for section in sections %}
-                <a href="#{{ section.slug }}" class="nav-header">
+                <a href="#{{ section.slug }}" class="sidebar-section">
                     {{ section.title }} 
                 </a>
                 <p></p>
