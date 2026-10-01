@@ -268,8 +268,8 @@ Mobile Layout
         overscroll-behavior: none;
         scroll-behavior:smooth;
         scroll-snap-type: y proximity;
-        scroll-padding-bottom: 3rem;
         scroll-padding-top: 0rem;
+        scroll-padding-bottom: 4rem;
     }
     
     .main-section {
@@ -278,7 +278,7 @@ Mobile Layout
     }
 
     .wrapper:first-child {
-        scroll-margin-top: 6rem;
+        scroll-margin-top: 0.5rem;
     }
 
     .wrapper {
@@ -286,7 +286,7 @@ Mobile Layout
         margin-bottom: 0rem;
         scroll-snap-align: start;
         scroll-snap-stop: normal;
-        scroll-margin-top: 4rem;
+        scroll-margin-top: 3rem;
         scroll-margin-bottom: 0rem;
 
     }
