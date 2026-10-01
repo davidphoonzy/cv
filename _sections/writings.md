@@ -9,7 +9,7 @@ order: 2
         <article class="writings-card">
             <a href = "{{ writing.external_url | relative_url }}" target="_blank" rel="noopener">
                 {% if writing.image %}
-                    <div class="writings-card-image" style="background-image: url('{{ writing.image }}');" role="img" aria-label=" {{ writing.image_attribution }}">
+                    <div class="writings-card-image" style="background-image: url('{{ writing.image | relative_url }}');" role="img" aria-label=" {{ writing.image_attribution }}">
                     </div>
                 {% endif %}
                 <div class="writings-card-title"><h3>{{ writing.title }}</h3></div>
