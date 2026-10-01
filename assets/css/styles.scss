@@ -24,9 +24,8 @@ body {
     min-width: 280px;
     background-color: #F0FCE1; // E2FCEF E9EFD7
     font-family: 'Cabin', sans-serif; //Faculty Glyphic'
-    font-size: 1.3rem;
-    font-weight: 300;
-    letter-spacing: -0.5px;
+    font-size: 1.2rem;
+    letter-spacing: px;
     line-height: 1.6;
     color: #235C88;
 }
@@ -109,7 +108,7 @@ Main Layout
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -px;
     font-size: 2.2rem;
     text-align: center;
@@ -119,7 +118,7 @@ h1 {
 
 .myname {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2.4rem;
     letter-spacing: -1.5px;
     color: #2684BA; //2684BA 477998
@@ -127,8 +126,8 @@ h1 {
 
 .nav-header {
     font-family: 'Cabin';
-    font-weight: 300;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     letter-spacing: +2px;
     text-decoration: none;
 }
@@ -321,6 +320,13 @@ Mobile Layout
 }
 
 
+/* ============================
+About ME
+============================= */
+
+.aboutme-main {
+    font-weight: 400;
+}
 
 /* ============================
 WRITINGS
