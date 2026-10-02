@@ -26,11 +26,12 @@ html {
 body { 
     margin: 0;
     min-width: 280px;
-    background-color: #F0FCE1; // E2FCEF E9EFD7
+    background-color: #F0FFE3; // E2FCEF E9EFD7 F3F9FF F0FCE1
     font-family: 'Cabin', sans-serif; //Faculty Glyphic'
-    font-size: 1.2rem;
-    letter-spacing: px;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
     line-height: 1.6;
+    font-weight: 400;
     color: #235C88;
 }
 
@@ -91,7 +92,7 @@ Main Layout
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
     font-size: 2.3rem;
     text-align: center;
     color: #FC8022; // #067BC2; //3F88C5
@@ -105,15 +106,18 @@ h1 {
     font-size: 2.4rem;
     letter-spacing: -1.5px;
     color: #2684BA; //2684BA 477998
+    margin-bottom: 1rem;
 }
 
 
 .sidebar-section {
     font-family: 'Cabin';
     font-weight: 400;
-    font-size: 1.3rem;
-    letter-spacing: +2.5px;
+    font-size: 1.4rem;
+    margin-left:  0.1rem;
+    letter-spacing: +2px;
     text-decoration: none;
+    line-height: 1.5;
 }
 
 
@@ -136,11 +140,20 @@ Sections
 
 #writings h1 {
     color: #FC8C36;
+    
+}
+
+#projects.wrapper {
+    background-color:#235C88;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 15px;
+    color: #F0FCE1;
 }
 
 
 #certs.wrapper  {
-    border-radius: 2%;
+    border-radius: 15px;
     padding: 1em;
 }
 
@@ -174,7 +187,7 @@ Top Bar
 .topbar .active-header {
     font-size: 2.1rem;
     letter-spacing: -0.5px;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     color: #E9EFD7; //#2274A5
     opacity: 0.5;
@@ -226,7 +239,6 @@ Left Side Bar
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1rem;
 }
 
 /* ============================
@@ -263,7 +275,7 @@ Mobile Layout
 ============================= */
 @media (max-width: 750px) {
     html {
-        font-size: 87.5%;
+        font-size: 90%;
         overflow-y: auto;
         overscroll-behavior: none;
         scroll-behavior:smooth;
@@ -328,7 +340,7 @@ Mobile Layout
         background:#FC8022; 
         outline: 0px solid #2274A5;
         transition: 0.25s ease-in-out, mask-size 0.25s ease-in-out, -webkit-mask-size 0.25s ease-in-out;
-
+        //margin-top: 0.5rem;
     }
     .sidebar-inner {
         width: 100%;
@@ -342,7 +354,7 @@ Mobile Layout
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 0rem;
+        padding-top: 1rem;
     }
 
 
@@ -378,16 +390,21 @@ Mobile Layout
     }
     .mobilebar-directory .mobilebar-section {
         flex: 0 0 auto;
-        margin: 0 1 rem;
+        margin: 0 0 rem;
     }
     .mobilebar-section {
         font-family: 'Cabin';
         font-weight: 400;
-        font-size: 1.2rem;
-        letter-spacing: +1px;
+        font-size: 1.3rem;
+        letter-spacing: 0px;
         text-decoration: none;
+        //color: #FED9B7;  
         color: #FFF;
-        opacity: 0.5;
+        opacity: 0.4;
+    }
+    .mobilebar-section::first-letter {
+        font-weight: 600;
+        //color: #EEE;
     }
     .mobilebar-section:hover {
         opacity: 0.9;
@@ -399,6 +416,11 @@ Mobile Layout
         display: none;
     }    
 
+
+
+    #writings.wrapper {
+        margin-bottom: 2rem;
+    }
 
     #aboutme.wrapper {
         padding-top: 0;
@@ -522,9 +544,9 @@ Text ---- */
 
 .writings-card-title h3 {
     margin: 1rem 0 1rem;
-    font-family: 'Literata', sans-serif; 
+    font-family: 'Merriweather', sans-serif; 
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -0.5px;
     line-height: 1.2;
 
@@ -532,17 +554,19 @@ Text ---- */
 
 .writings-card-des p {
     margin: 0;
-    font-family: 'Literata', sans-serif; 
+    font-family: 'Merriweather', sans-serif; 
     line-height: 1.4;
-    font-weight: 00;
+    font-weight: 200;
     font-size: 1rem;
+    letter-spacing: 0px;
 
 }
 
 .writings-card-page {
-    font-family: 'Literata', sans-serif;
-    margin-top: 0.75rem;
-    font-size: 0.75rem;
+    font-family: 'Poppins', serif;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 300;
     text-align: right;
 }
 
@@ -577,12 +601,13 @@ PROJECTS
 .projects-card-back,
 .projects-card-img {
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 
 .projects-card-inner {
     border: solid 2px #424242;
-    border-radius: 3%;
+    border-radius: 10px;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -659,7 +684,7 @@ div#projects-card-2 > .projects-card-back {
     height: 150px;
     overflow: hidden;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 15px;
     border: inset 3px #424242;
 }
 
@@ -676,17 +701,17 @@ div#projects-card-2 > .projects-card-back {
 
 .projects-card-head {
     width: 100%;
-    font-family: 'Cabin';
-    font-weight: 700;
-    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.1rem;
     text-align: center;
     border-radius: 10px;
     border: inset 3px #424242;
     text-transform: uppercase;
-    font-style: italic;
+    //font-style: italic;
     align-self: center;
     opacity: 0.95;
-    letter-spacing: 0.5px;
+    //letter-spacing: -0.5px;
 
 }
 .projects-card-head,
@@ -727,9 +752,9 @@ div#projects-card-2 > .projects-card-front .projects-card-desc {
     border: inset 3px #424242;
     flex: 1;
     padding: 0.5rem 0.5rem;
-    font-family: 'Cabin';
+    font-family: 'Merriweather';
     letter-spacing: 0.5px;
-    opacity: 0.95;
+    opacity: 0.97;
 }
 
 
@@ -785,7 +810,9 @@ PROJECTS
 
 .certs-des {
     font-size: 1rem;
-    font-family: 'Literata';
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-family: 'Merriweather';
 }
 
 .certs-links a {
