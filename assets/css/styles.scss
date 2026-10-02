@@ -144,7 +144,10 @@ Sections
 }
 
 #projects.wrapper {
-    background-color:#235C88;
+    background-image: linear-gradient(to right, #226F54, #235C88);
+    // F0FFE3
+    //background-color: #;
+    //color:#235C88;
     padding-top: 1rem;
     padding-bottom: 2rem;
     border-radius: 15px;
@@ -417,6 +420,10 @@ Mobile Layout
     }    
 
 
+
+    #projects.wrapper {
+        background-image: linear-gradient(to bottom, #226F54, #235C88);
+    }
 
     #writings.wrapper {
         margin-bottom: 2rem;

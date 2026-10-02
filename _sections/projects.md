@@ -1,7 +1,7 @@
 ---
 title: Projects
 slug: projects
-order: 3
+order: 4
 ---
 
 <div class="projects-container">
