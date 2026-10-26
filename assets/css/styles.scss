@@ -26,7 +26,7 @@ html {
 body { 
     margin: 0;
     min-width: 280px;
-    background-color: #FFFFE2; // E2FCEF E9EFD7 F3F9FF F0FCE1
+    background-color: #f7f6f2; // E2FCEF E9EFD7 F3F9FF F0FCE1
     font-family: 'Cabin', sans-serif; //Faculty Glyphic'
     font-size: 1.3rem;
     letter-spacing: -0.5px;
@@ -144,7 +144,7 @@ Sections
 }
 
 #projects.wrapper {
-    background-image: linear-gradient(to right, #226F54, #235C88);
+    background-image: linear-gradient(to bottom, bisque, #235C88);
     // F0FFE3
     //background-color: #;
     //color:#235C88;
@@ -422,7 +422,9 @@ Mobile Layout
 
 
     #projects.wrapper {
-        background-image: linear-gradient(to bottom, #226F54, #235C88);
+        background-image: linear-gradient(to bottom, bisque,#235C88);
+        // 226F54
+        color:bisque
     }
 
     #writings.wrapper {
