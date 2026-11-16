@@ -68,7 +68,7 @@ body {
     margin-bottom: 2rem;
     // scroll-snap-align: proximity;
     // scroll-snap-stop: always;
-    min-height: 75vh;
+    min-height: 62vh;
     vertical-align: middle;
 }
 
@@ -689,17 +689,22 @@ div#projects-card-2 > .projects-card-back {
 }
 
 .projects-card-back a {
- color: #FC8022;
- text-decoration: underline dotted;
+    color: #FC8022;
+    text-decoration: none;
+    transition: width ease 1s;
 }
 
+.projects-card-back a:hover {
+    text-decoration: underline dotted;
+}
 
 .projects-card-back .projects-card-tool a {
     color: #E9EFD7;
     text-decoration: none;
    }
 
-   
+
+
 .projects-card-back h3 {
     font-size: 1rem;
     line-height: 1;
