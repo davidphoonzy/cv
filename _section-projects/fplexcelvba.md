@@ -3,7 +3,7 @@ name: Fantasy Football Excel VBA
 tools: Download Full Program
 datedone: 2018-01-01
 image: https://davidphoonzy.github.io/cv/assets/img/projects/excelplan.png
-link: /assets/projects/fplteam-cv.xlsb
+link: ../assets/projects/fplteam-cv.xlsb
 description: Excel VBA Macro-enabled spreadsheet with GUI, memory and error-handling.
 order: 2
 ---
