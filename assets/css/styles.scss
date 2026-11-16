@@ -674,6 +674,38 @@ div#projects-card-2 > .projects-card-back {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     gap: 0px;
+
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.projects-card-back ul {
+    list-style-type: none;
+    font-size: 0.9rem;
+    margin:0;
+    padding-left: 0.5rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.projects-card-back a {
+ color: #FC8022;
+ text-decoration: underline dotted;
+}
+
+
+.projects-card-back .projects-card-tool a {
+    color: #E9EFD7;
+    text-decoration: none;
+   }
+
+   
+.projects-card-back h3 {
+    font-size: 1rem;
+    line-height: 1;
+    font-style: italic;
+    font-weight: 400;
+
 }
 
 .projects-card-front {
@@ -683,6 +715,36 @@ div#projects-card-2 > .projects-card-back {
     padding-bottom: 0.8rem;
     gap: 0px;
 }
+
+.projects-card-tool {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 10px;
+    margin: 0.3rem 0;
+    border: inset 3px #424242;
+    text-align: center;
+    font-style: normal;
+    color: #F0FCE1;
+}
+
+div#projects-card-1 > .projects-card-back .projects-card-tool {
+    background-color: rgba($color: #3881ae, $alpha: 0.87);
+    backdrop-filter: blur(12px);
+}
+
+div#projects-card-2 > .projects-card-back .projects-card-tool {
+    background-color: rgba($color: #5C946E, $alpha: 0.8);
+    backdrop-filter: blur(12px);
+}
+    
+div#projects-card-2 .projects-card-back .projects-card-tool:hover,
+div#projects-card-1 > .projects-card-back .projects-card-tool:hover
+{
+    background-color: #FC8022;
+}
+
 
 .projects-card-img {
     width: 100%;
@@ -707,8 +769,8 @@ div#projects-card-2 > .projects-card-back {
 .projects-card-head {
     width: 100%;
     font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
     text-align: center;
     border-radius: 10px;
     border: inset 3px #424242;
@@ -717,8 +779,8 @@ div#projects-card-2 > .projects-card-back {
     align-self: center;
     opacity: 0.95;
     //letter-spacing: -0.5px;
-
 }
+
 .projects-card-head,
 .projects-card-desc,
 .projects-card-img {
@@ -737,21 +799,32 @@ div#projects-card-1 > .projects-card-front .projects-card-desc {
     backdrop-filter: blur(12px);
 }
 
+div#projects-card-1 > .projects-card-back .projects-card-content {
+    background-color: rgba($color: #3881ae, $alpha: 0.87);
+    backdrop-filter: blur(12px);
+}
+
 div#projects-card-2 > .projects-card-front .projects-card-head,
 div#projects-card-2 > .projects-card-back .projects-card-head {
     background-color: rgba($color: #5C946E, $alpha: 0.8);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
 }
-
 
 div#projects-card-2 > .projects-card-front .projects-card-desc {
     background-color: rgba($color: #5C946E, $alpha: 0.8);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
 }
 
 
-.projects-card-desc {
+div#projects-card-2 > .projects-card-back .projects-card-content {
+    background-color: rgba($color: #5C946E, $alpha: 0.8);
+    backdrop-filter: blur(12px);
+    font-size: 0.5rem;
+}
+
+.projects-card-desc, .projects-card-content {
     font-size: 0.9rem;
+    font-weight: 300;
     height: auto;
     border-radius: 10px;
     border: inset 3px #424242;
@@ -760,9 +833,19 @@ div#projects-card-2 > .projects-card-front .projects-card-desc {
     font-family: 'lato';
     letter-spacing: 0px;
     opacity: 0.97;
+    margin-top: 0.3rem;
 }
 
 
+div#projects-card-2 > .projects-card-back .projects-card-content ul {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+div#projects-card-2 > .projects-card-back .projects-card-content li  {
+    margin: 0.3rem;
+}
 
 /* ============================
 PROJECTS

@@ -16,8 +16,9 @@ order: 4
                 </div>
                 <div class="projects-card-back">
                     <div class="projects-card-head">{{ project.name }}</div>
-                    <div class="">{{ project.datedone }}</div>
-                    <div class="">{{ project.tools }}</div>
+                    <div class="projects-card-content">{{ project.content | markdownify }}</div>
+                    <div class="projects-card-tool"><a href="{{ project.link }}"> {{ project.tools }}</a></div> 
+                    <div class="projects-card-date"></div>
                 </div>
             </div>
         </article>
