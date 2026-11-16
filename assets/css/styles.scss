@@ -13,7 +13,7 @@
 html {
     min-width: 300px;
     scroll-behavior:smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
     scroll-padding-top: 4rem;
     scroll-padding-bottom: 18rem;
 }
@@ -27,11 +27,11 @@ body {
     margin: 0;
     min-width: 280px;
     background-color: #f7f6f2; // E2FCEF E9EFD7 F3F9FF F0FCE1
-    font-family: 'Cabin', sans-serif; //Faculty Glyphic'
-    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif; //Faculty Glyphic'
+    font-size: 1.2rem;
     letter-spacing: -0.5px;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 300;
     color: #235C88;
 }
 
@@ -64,10 +64,12 @@ body {
 
 
 .wrapper {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    // scroll-snap-align: proximity;
+    // scroll-snap-stop: always;
+    min-height: 75vh;
+    vertical-align: middle;
 }
 
 
@@ -111,11 +113,11 @@ h1 {
 
 
 .sidebar-section {
-    font-family: 'Cabin';
-    font-weight: 400;
-    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
     margin-left:  0.1rem;
-    letter-spacing: +2px;
+    letter-spacing: +3px;
     text-decoration: none;
     line-height: 1.5;
 }
@@ -132,7 +134,8 @@ Sections
 }
 
 #writings.wrapper  {
-    background-color: #111; // F0C58C FFB963 3881ae
+    // background-color: #235C88; // F0C58C FFB963 3881ae
+    background-image: linear-gradient(to bottom, #222222, #235C88);
     padding: 1rem;
     border-radius: 15px;
     color: #F0FCE1;
@@ -144,7 +147,7 @@ Sections
 }
 
 #projects.wrapper {
-    background-image: linear-gradient(to bottom, bisque, #235C88);
+    background-image: linear-gradient(to bottom, #235C88, #222222 );
     // F0FFE3
     //background-color: #;
     //color:#235C88;
@@ -282,9 +285,9 @@ Mobile Layout
         overflow-y: auto;
         overscroll-behavior: none;
         scroll-behavior:smooth;
-        scroll-snap-type: y proximity;
+        // scroll-snap-type: y proximity;
         scroll-padding-top: 0rem;
-        scroll-padding-bottom: 4rem;
+        // scroll-padding-bottom: 4rem;
     }
     
     .main-section {
@@ -293,16 +296,16 @@ Mobile Layout
     }
 
     .wrapper:first-child {
-        scroll-margin-top: 0.5rem;
+        // scroll-margin-top: 0.5rem;
     }
 
     .wrapper {
         margin-top: 0rem;
         margin-bottom: 0rem;
         scroll-snap-align: start;
-        scroll-snap-stop: normal;
-        scroll-margin-top: 3rem;
-        scroll-margin-bottom: 0rem;
+        // scroll-snap-stop: normal;
+        // scroll-margin-top: 3rem;
+        // scroll-margin-bottom: 0rem;
 
     }
     
@@ -419,13 +422,6 @@ Mobile Layout
         display: none;
     }    
 
-
-
-    #projects.wrapper {
-        background-image: linear-gradient(to bottom, bisque,#235C88);
-        // 226F54
-        color:bisque
-    }
 
     #writings.wrapper {
         margin-bottom: 2rem;
@@ -553,9 +549,9 @@ Text ---- */
 
 .writings-card-title h3 {
     margin: 1rem 0 1rem;
-    font-family: 'Merriweather', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.5px;
     line-height: 1.2;
 
@@ -563,7 +559,7 @@ Text ---- */
 
 .writings-card-des p {
     margin: 0;
-    font-family: 'Merriweather', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     line-height: 1.4;
     font-weight: 200;
     font-size: 1rem;
@@ -575,7 +571,7 @@ Text ---- */
     font-family: 'Poppins', serif;
     margin-top: 0.8rem;
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: right;
 }
 
@@ -761,8 +757,8 @@ div#projects-card-2 > .projects-card-front .projects-card-desc {
     border: inset 3px #424242;
     flex: 1;
     padding: 0.5rem 0.5rem;
-    font-family: 'Merriweather';
-    letter-spacing: 0.5px;
+    font-family: 'lato';
+    letter-spacing: 0px;
     opacity: 0.97;
 }
 
@@ -821,7 +817,7 @@ PROJECTS
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0px;
-    font-family: 'Merriweather';
+    font-family: 'Faculty Glyphic';
 }
 
 .certs-links a {
