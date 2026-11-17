@@ -31,6 +31,17 @@ function setupHeaderObserver() {
     window.addEventListener("scroll", updateHeader);
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.projects-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            if(e.target.closest('a')) return;
+            card.classList.toggle('is-flipped');
+        });
+
+
+    });
+
+});
 
 
 document.addEventListener("DOMContentLoaded", setupHeaderObserver);

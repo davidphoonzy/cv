@@ -14,6 +14,6 @@ Builder with 8 years of connecting people, teaching and delivering practical sol
 
 My interests are in Politics, Philosophy and Economics, which I  pursue in my spare time
 
-Learning different systems of thought, methodologies, and structures is my hobby. How they interact and build upon one another in unintended fashion is the source of my fascination.
+Learning different systems of thought across disciplines is my hobby. How they interact and build upon one another in unintended fashion is the source of my fascination.
 
 How much social solidarity I’ve built, and public learning I’ve deepened, is how I judge success.
